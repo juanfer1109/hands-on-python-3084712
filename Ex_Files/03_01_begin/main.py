@@ -16,6 +16,8 @@ with open("laureates.csv", "r") as f:
     reader = csv.DictReader(f)
     laureates = list(reader)
 
+pprint(laureates)
+
 for laureate in laureates:
     if laureate["surname"] == "Einstein":
         pprint(laureate)
